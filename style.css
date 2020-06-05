@@ -1,7 +1,7 @@
 :root {
     --color-font: #130542;
     --color-dark: #1b1b32;
-    --color-light-alpha: rgb(207, 175, 190, 0.5);
+    --color-light-alpha: rgba(207, 175, 190, 0.5);
     --color-green: rgba(74, 196, 120, 0.5);
 }
 
