@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Leoncraft Survey Form</h1>
+            <p id="description" class="description">Thank you for visiting</p>
+        </header>
+
+        <form action="URL" id="survey-form">
+            <div>
+                <label for="name" id="name-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required
+                    autofocus>
+            </div>
+
+            <div>
+                <label for="email" id="email-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email"
+                    required>
+            </div>
+
+            <div>
+                <label for="number" id="number-label">Age</label>
+                <input type="number" class="form-control" min="10" max="95" id="number" name="number"
+                    placeholder="Enter your age" required>
+            </div>
+
+            <div>
+                <label for="profile" id="profile-label">You are</label>
+                <select id="dropdown" class="form-control" placeholder="Select the current role" required>
+                    <option disabled selected value>Select an option</option>
+                    <option name="child">Child</option>
+                    <option name="studet">Student</option>
+                    <option name="worker">Worker</option>
+                    <option name="etc">Etc</option>
+                </select>
+            </div>
+
+            <div>
+                <p>How is your mood</p>
+                <input type="radio" id="radio" class="input-radio" name="radio" value="well">Well<br>
+                <input type="radio" id="radio" class="input-radio" name="radio" value="nice">Nice<br>
+                <input type="radio" id="radio" class="input-radio" name="radio" value="not bad">Not bad
+            </div>
+
+            <p>Choose your monster's features:<span class="clue">(Check all that apply)</span></p>
+            <div>
+                <label for="scales"><input type="checkbox" id="scales" class="input-checkbox" name="scales"
+                        value="scales">Scales</label>
+            </div>
+
+            <div>
+                <label for="horns"><input type="checkbox" id="horns" class="input-checkbox" name="horns"
+                        value="horns">Horns</label>
+            </div>
+
+            <div>
+                <label for="hooves"><input type="checkbox" id="hooves" class="input-checkbox" name="hooves"
+                        value="hooves">Hooves</label>
+            </div>
+
+            <div>
+                <label for="tails"><input type="checkbox" id="tails" class="input-checkbox" name="tails"
+                        value="tails">Tails</label>
+            </div>
+
+            <p>Any comments or suggestions?</p>
+            <p><textarea class="input-textarea" rows="4" cols="45" name="text"
+                    placeholder="Enter your comment here..."></textarea></p>
+            <p><input type="submit" class="submit-button" value="Submit" id="submit"></p>
+        </form>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
